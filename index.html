@@ -1,0 +1,109 @@
+<!DOCTYPE html>  
+<html>
+    <head>  
+        <meta charset="utf-8" />
+        <title>Fullstack - A CS club for Seattle high schoolers</title>
+        <link rel="stylesheet" type="text/css" href="normalize.css" />
+        <link rel="stylesheet" type="text/css" href="skeleton.css" />
+        <link rel="stylesheet" type="text/css" href="main.css" />
+        <link href="https://fonts.googleapis.com/css?family=Merriweather|Quicksand:400,700|VT323" rel="stylesheet">
+        <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+    </head>
+
+    <body class="animate-in">
+        <div class="container">
+            <div class="pageTitle">
+                <h1>FULLSTACK</h1>
+                <!--<h1 class="titleabove">FULLSTACK</h1>-->
+            </div>
+            <h1 class="subtitle">A CS Club for Seattle High Schoolers</h1>
+            <hr />
+            <div class="row navbar">
+                <div class="two columns">
+                    <button class="navbutton opened">HOME</button>
+                </div>
+                <div class="two columns">
+                    <button class="navbutton" onclick="window.open('timeline.html','_self')">SESSIONS</button>
+                </div>
+                <div class="eight columns navigation-bar-message-container">
+                    <span class="navigation-bar-message">Next session on <b>November 11th</b>.<br/> Interested? Send us an email at <a href="mailto:clubfullstack@gmail.com">clubfullstack@gmail.com</a></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="section">
+                    <p class="sectionHeading">
+                        About
+                    </p>
+                    <p class="sectionBody">
+                        Fullstack is a coding club launching early November 2017 for high schoolers interested in computer science and computer programming. Our goal is to collaboratively explore the applications of computer science and computer programming in all aspects of STEM. Wind tunnel simulations, OpenGL fidget spinners, protein modelling, water-bottle-flipping AI, Slither.io bots, procedurally generated music, first-person shooters, stock prediction models, and dungeon crawling A* pathfinding - All of these can be accomplished with simple programming languages and CS principles that actually aren’t all that hard to learn.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="section">
+                    <p class="sectionHeading">
+                        What we do
+                    </p>
+                    <p class="sectionBody">
+                        Every month, we will be focusing on a certain topic. Through the month, we will be individually working on topic-related projects. We’ll also be discussing the topic at each club meeting which we will hold once every 2 weeks. At the end of the month, we will have a hackathon in which we'll work on a second project based on the same topic but in a limited time. <br /><br />
+                        We are quite flexible with the topics we’ll be looking at - anyone can nominate a topic and we’ll vote for one at the beginning of each month. At each meeting, we'll discuss and share information we've gathered on the topic.<br /><br />
+                        We will be meeting once every two weeks somewhere TBD in the north Seattle area. If you have any questions, feel free to contact us. <i class="em em-wink"></i>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="section">
+                    <p class="sectionHeading">
+                        Why you should join
+                    </p>
+                    <p class="sectionBody">
+                        By joining this club, we can together share our knowledge and apply CS to today’s world. Computer science is all around us and powers every single aspect of today's world. There are so many things you can make once you know how to write computer programs that I won't even try to list them.
+                        <br/><br/>
+                        It's also a lot of fun! If you know how to program you can make all sorts of cool stuff. Pretty much every programmer has at least one pet project - maybe a small game, a Node.js module, or perhap an esoteric programming language compiler. We would love to hear from you if you're interested in joining Fullstack. If you know anyone else who might be interested, please let them know. We hope to hear from you soon. 
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="section">
+                    <p class="sectionHeading">
+                        How to join
+                    </p>
+                    <p class="sectionBody">
+                        <b>If you have prior programming experience...</b><br />
+                        We would love to have you join our club! <i class="em em-smiley"></i> Just write us a short email letting us know you would like to join and we'll get back to as soon as possible.<br /><br />
+                        <b>If you don't have prior programming experience...</b><br />
+                        There actually isn't that much you have to learn to understand the topics we'll be going through each month. All you need to know is on <a href="http://www.jsforcats.com" target="_blank">this page over here</a>. If you're interested in joining, please get in touch with us - you can definitely come to club meetings even if you haven't finished reading that page. And please check the Timeline page for upcoming dates, future meetings, etc. so you can get an idea of what our schedule looks like.
+                    </p>
+                    <p class="sectionFooter">
+                        If you are interested in joining or want some more information, feel free to send us an email to <a href="mailto:clubfullstack@gmail.com" target="_blank">clubfullstack@gmail.com</a>. <i class="em em-smile"></i> Hope to see you at our first meeting! <br/>
+                        <div class="row">
+                            <button class="one-third column joinbutton" onclick="window.open('mailto:clubfullstack@gmail.com')">REQUEST MEMBERSHIP</button>
+                            <button class="one-third column joinbutton" onclick="window.open('mailto:clubfullstack@gmail.com')">GET IN TOUCH</button>
+                            <button class="one-third column joinbutton" rel="sidebar" onclick="bookmarkPage()">BOOKMARK PAGE</button>
+                        </div>
+                        <br/>
+                        <i>This website was made using <a href="https://afeld.github.io/emoji-css/" target="_blank">Emoji.css</a>, <a href="https://www.getskeleton.com" target="_blank">Skeleton.css</a>, and <a href="https://fonts.google.com" target="_blank">Google Fonts</a>. Hosted by <a href="https://pages.github.com" target="_blank">Github Pages</a></i>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <script src="main.js"></script>
+        <script>
+            // Bookmark me
+            function bookmarkPage() {
+                var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+                if(isChrome) {
+                    alert("So you don't have a Gecko browser... you don't have Opera or IE... it's WebKit!... which doesn't support bookmarking a page with JS. Oh well. :/");
+                } else if (window.sidebar) { // Mozilla Firefox Bookmark
+                  window.sidebar.addPanel(location.href,document.title,"");
+                } else if(window.external) { // IE Favorite
+                  window.external.AddFavorite(location.href,document.title);
+                } else if(window.opera && window.print) { // Opera Hotlist
+                  this.title=document.title;
+                } else {
+                    alert("So you don't have a Gecko browser... you don't have Opera or IE... it's WebKit!... which doesn't support bookmarking a page with JS. Oh well. :/");
+                }                
+            }
+        </script>
+    </body>  
+</html>  
